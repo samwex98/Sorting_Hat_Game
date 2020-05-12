@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Hat</title>
+
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1 class="Algorithm" id="algorithm"></h1>
+            <h2 class="counter" id="count">Current Moves: 0</h2>
+            <h3 class="rounds" id="round">Round: 1</h3>
+            <h4 class="limits" id="limit">Limit: 24</h4>
+        </header>
+        <div id="listId" class="lists">
+            <div class="list" id="spot_1">
+                <img class="list-item" id="old1" draggable="true" src="assets/hats/tophat_red.png" height="180px" width="180px" >
+            </div>
+            <div class="list" id="spot_2">
+                <img class="list-item" id="old2" draggable="true" src="assets/hats/tophat_orange2.png" height="180px" width="180px" >
+            </div>
+            <div class="list" id="spot_3">
+                <img class="list-item" id="old3" draggable="true" src="assets/hats/tophat_yellow.png" height="180px" width="180px" >
+            </div>
+            <div class="list" id="spot_4">
+                <img class="list-item" id="old4" draggable="true" src="assets/hats/tophat_yellowgreen.png" height="180px" width="180px" >
+            </div>
+            <div class="list" id="spot_5">
+                <img class="list-item" id="old5" draggable="true" src="assets/hats/tophat_green_.png" height="180px" width="180px" >
+            </div>
+            <div class="list" id="spot_6">
+                <img class="list-item" id="old6" draggable="true" src="assets/hats/tophat_blue.png" height="180px" width="180px" >
+            </div>
+            <div class="list" id="spot_7">
+                <img class="list-item" id="old7" draggable="true" src="assets/hats/tophat_purple.png" height="180px" width="180px" >
+            </div>
+            <div class="list" id="spot_8">
+                <img class="list-item" id="old8" draggable="true" src="assets/hats/tophat_pink.png" height="180px" width="180px" >
+            </div>
+            <div class="list" id="spot_9">
+                <img class="list-item" id="old9" draggable="true" src="assets/hats/tophat_white.png" height="180px" width="180px" >
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <button type="button" id="startButton" onclick="startGame()" >Start Game</button>
+    <button type="button" id="playButton" onclick="introScreen()" >PLAY</button>
+    <button type="button" id="nextButton" onclick="nextRound()" >Continue</button>
+    <button type="button" id="exitButton" onclick="returnScreen()" >Exit</button>
+    <button type="button" id="retryButton" onclick="nextRound()" >Retry</button>
+    
+
+</body>
+</html>
